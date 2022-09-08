@@ -5,6 +5,8 @@ define e = Character('Эйлин', color="#c8ffc8")
 
 define clownDemid = Actor(Character('Клоун Демид'), ActorStats(intellect = 0))
 
+image clownDemid sad = 'IMG_8291.JPG'
+
 # Вместо использования оператора image можете просто
 # складывать все ваши файлы изображений в папку images.
 # Например, сцену bg room можно вызвать файлом "bg room.png",
@@ -24,6 +26,7 @@ label start:
     clownDemid.character "Добавьте сюжет, изображения и музыку и отправьте её в мир!"
 
     $ clownDemid.stats.intellect.value=-1
+    show clownDemid sad
 
     $ clownDemid.character(str(clownDemid.stats.intellect))
 
