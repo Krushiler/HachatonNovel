@@ -17,6 +17,8 @@ label scene_11:
     if chance >= choosenCharacter.stats.motivation.value:
         'Синдзи окончательно теряет рассудок, вам придется продолжить без него.'
         $ shinji.die()
+    else
+        'Вам удаётся убедить Синдзи продолжить путь'
 
     menu:
         'тык 17':
