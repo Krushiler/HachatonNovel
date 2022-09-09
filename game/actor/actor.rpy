@@ -19,7 +19,7 @@ init python:
 
 
     class Actor:
-        def __init__(self, character, stats=ActorStats(), description):
+        def __init__(self, character, stats=ActorStats(), description=''):
             self.character = character
             self.stats = stats
             self.description = description
