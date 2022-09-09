@@ -39,7 +39,7 @@ label scene_17:
                         $ choosenCharacter = shinji
 
                 $ chance = renpy.random.randint(1,4)
-                if chance >= choosenCharacter.stats.strength.value:
+                if chance <= choosenCharacter.stats.strength.value:
                     '[choosenCharacter.character.name] не удалось победить Шмандюка, ружье оказалось сильнее..'
                     $ choosenCharacter.die()
                     'Вы спасаетесь бегством..'
