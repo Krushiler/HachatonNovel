@@ -2,11 +2,11 @@ label scene_3:
 
     scene scene_3 with fade
 
-    'сцена 3'
+    'Вы оказались на площади парка, выберите куда отправиться'
     menu:
-        'тык 4':
-            jump scene_4
-        'тык 6':
+        'Кафе':
             jump scene_10
-        'тык 10':
+        'Горки':
             jump scene_6
+        'Комната страха':
+            jump scene_4
