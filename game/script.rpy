@@ -12,24 +12,12 @@ image clownDemid sad = 'IMG_8291.JPG'
 # Например, сцену bg room можно вызвать файлом "bg room.png",
 # а eileen happy — "eileen happy.webp", и тогда они появятся в игре.
 
-
-
 # Игра начинается здесь:
 label start:
 
-    scene bg room
+    call transforms
+    call scenes_bg
 
-    show eileen happy
-
-    clownDemid.character "Вы создали новую игру Ren'Py."
-
-    clownDemid.character "Добавьте сюжет, изображения и музыку и отправьте её в мир!"
-
-    $ clownDemid.stats.intellect.value=-1
-    show clownDemid sad
-
-    $ clownDemid.character(str(clownDemid.stats.intellect))
-
-    jump ochko_demida
+    jump scene_2
 
     return
