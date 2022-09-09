@@ -6,7 +6,7 @@ label scene_10:
 
     show shinji normal
 
-    $ shinji.character 'АОАОАОАООАОА, ЧТО ЭТО????'
+    shinji.character 'АОАОАОАООАОА, ЧТО ЭТО????'
 
     hide shinji normal
 
