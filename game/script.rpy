@@ -16,7 +16,6 @@ define lakmus = Actor(Character('Лакмус', color='#ff00ff'), ActorStats(com
 label start:
 
     call transforms
-    call scenes_bg
 
     jump scene_2
 
