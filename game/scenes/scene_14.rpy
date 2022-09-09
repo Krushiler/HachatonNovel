@@ -20,7 +20,7 @@ label scene_14:
         '[choosenCharacter.character.name] Удаётся спасти [tempChoosenCharacter.character.name].'
     else:
         '[choosenCharacter.character.name] Не удалось помочь [tempChoosenCharacter.character.name], вам придется продолжить путь без [tempChoosenCharacter.character.name]'
-        tempChoosenCharacter.die()
+        $ tempChoosenCharacter.die()
 
     'Вы отправляетесь к колесу обозрения.'
 
