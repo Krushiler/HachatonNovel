@@ -8,8 +8,17 @@ label scene_16:
 
     'Вся компания успокаивается, ведь спустившись вы сможете покинуть это страшное место…'
 
-    menu:
-        'тык 19':
+    $ chance = renpy.randint(1, 3)
+
+    if chance == 1 or chance == 2:
+        jump scene_20
+    else:
+        'Колесо внезапно начинает трястись и вы летите вниз..'
+        if bobby.alive:
+            $ shinji.die()
+            $ yuno.die()
+            $ lakmus.die()
+
+            jump scene_23
+        else
             jump scene_19
-        'тык 20':
-            jump scene_20
