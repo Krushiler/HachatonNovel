@@ -6,6 +6,7 @@ define bobby = Actor(Character('Бобби', color='#F7C649'), ActorStats(streng
 define yuno = Actor(Character('Юно Гасай', color='#60C6E7'), ActorStats(motivation=3), 'Коммуникативный паренек, который может уговорить почти любого')
 define lakmus = Actor(Character('Лакмус', color='#B3D358'), ActorStats(communication=3), 'Кто не курит и не пьет - ровно дышит, сильно бьёт. Силач, за друзей и свободу полезет на проволоку')
 
+define smanduk = Character('Шмандюк', color='#FF0000')
 
 # Вместо использования оператора image можете просто
 # складывать все ваши файлы изображений в папку images.
