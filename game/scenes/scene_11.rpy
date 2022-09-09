@@ -1,4 +1,7 @@
 label scene_11:
+
+    scene scene_11 with fade
+
     'Выберите персонажа, который пойдет успокаивать синдзи'
 
     menu:

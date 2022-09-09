@@ -1,4 +1,7 @@
 label scene_3:
+
+    scene scene_3 with fade
+
     'сцена 3'
     menu:
         'тык 4':
