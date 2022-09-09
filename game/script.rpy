@@ -1,11 +1,11 @@
 ﻿# Вы можете расположить сценарий своей игры в этом файле.
 
 # Определение персонажей игры.
-define e = Character('Эйлин', color="#c8ffc8")
+define shinji = Actor(Character('Синдзи', color='#ffffff'), ActorStats(luck=3), 'некое описание')
+define bobby = Actor(Character('Бобби', color='#00ff00'), ActorStats(strength=3), 'некое описание')
+define yuno = Actor(Character('Юно Гасай', color='#0000ff'), ActorStats(motivation=3), 'некое описание')
+define lakmus = Actor(Character('Лакмус', color='#ff00ff'), ActorStats(communication=3), 'некое описание')
 
-define clownDemid = Actor(Character('Клоун Демид'), ActorStats(intellect = 0))
-
-image clownDemid sad = 'IMG_8291.JPG'
 
 # Вместо использования оператора image можете просто
 # складывать все ваши файлы изображений в папку images.
