@@ -23,13 +23,10 @@ init python:
             self.character = character
             self.stats = stats
             self.description = description
-            self.alive = true
+            self.alive = True
 
         def getStatsArray(self):
             return self.stats.getStatsArray()
 
-        def alive():
-            return self.alive
-
-        def die():
-            self.alive = true
+        def die(self):
+            self.alive = False

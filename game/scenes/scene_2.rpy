@@ -1,6 +1,6 @@
 label scene_2:
 
-    show bg scene_2
+    scene scene_2
 
     show yuno darkened at character_1 with dissolve
     show bobby darkened at character_2 with dissolve
