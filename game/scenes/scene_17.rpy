@@ -1,19 +1,18 @@
-$ wasHere = False
-
 label scene_17:
+    $ wasHere = False
 
-    scene scene_17 with fade
+    scene scene_18 with fade
 
     if wasHere:
         jump scene_12
     else:
-        wasHere = True
+        $ wasHere = True
 
         'Вы отправились в сторону из которой пришли.'
 
         'Показались ворота входа в парк, но тут…'
 
-        show shmanduk angry at character_3
+        show shmanduk angry at right
 
         'Откуда ни возьмись появляется Мистер Шмандюк, а в руках у него..'
 
@@ -23,7 +22,7 @@ label scene_17:
 
         hide yuno
 
-        shmanduk 'Я же говорил вам, что не выпущу вас, пока вы не посетите все аттракционы!'
+        smanduk 'Я же говорил вам, что не выпущу вас, пока вы не посетите все аттракционы!'
 
         'Что будете делать?'
         menu:

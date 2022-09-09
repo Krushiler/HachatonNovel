@@ -7,20 +7,20 @@ label scene_14:
     'кто пойдет помогать?'
     $ tempChoosenCharacter = choosenCharacter
     menu:
-        '[yuno.character.name]' if yuno.alive:
+        '[yuno.character.name]' if yuno.alive and tempChoosenCharacter != yuno:
             $ choosenCharacter = yuno
-        '[bobby.character.name]' if bobby.alive:
+        '[bobby.character.name]' if bobby.alive and tempChoosenCharacter != bobby:
             $ choosenCharacter = bobby
-        '[lakmus.character.name]' if lakmus.alive:
+        '[lakmus.character.name]' if lakmus.alive and tempChoosenCharacter != lakmus:
             $ choosenCharacter = lakmus
-        '[shinji.character.name]' if shinji.alive:
+        '[shinji.character.name]' if shinji.alive and tempChoosenCharacter != shinji:
             $ choosenCharacter = shinji
 
-    if chance >= choosenCharacter.stats.strength.value:
+    if chance <= choosenCharacter.stats.strength.value:
         '[choosenCharacter.character.name] Удаётся спасти [tempChoosenCharacter.character.name].'
     else:
         '[choosenCharacter.character.name] Не удалось помочь [tempChoosenCharacter.character.name], вам придется продолжить путь без [tempChoosenCharacter.character.name]'
-        tempChoosenCharacter.die()
+        $ tempChoosenCharacter.die()
 
     'Вы отправляетесь к колесу обозрения.'
 

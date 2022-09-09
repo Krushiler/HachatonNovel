@@ -11,21 +11,21 @@ label scene_2:
 
     show yuno normal with dissolve
 
-    'Конченый идиот'
+    yuno.character '[yuno.description]'
 
     show yuno darkened with dissolve
     show bobby normal with dissolve
 
-    'Самый сексуальный мужик в мире'
+    bobby.character '[bobby.description]'
 
     show bobby darkened with dissolve
     show lakmus normal with dissolve
 
-    'Злодей-британец'
+    lakmus.character '[lakmus.description]'
 
     show lakmus darkened with dissolve
     show shinji normal with dissolve
 
-    'Горячая чикса'
+    shinji.character '[shinji.description]'
 
     jump scene_1
