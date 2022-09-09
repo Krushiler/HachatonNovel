@@ -14,7 +14,7 @@ label scene_21:
 
     hide shinji
 
-    show lakmus normal
+    show lakmus normal at right
 
     lakmus.character 'Ты чего? Мы же ради неё и пришли, её столько крутили в рекламе этого парка!'
 
