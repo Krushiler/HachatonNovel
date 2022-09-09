@@ -8,9 +8,9 @@ label scene_13:
     $ chance = renpy.random.randint(1,4)
 
     if chance >= choosenCharacter.stats.luck.value:
+        jump scene_14
+    else:
         '[choosenCharacter.character.name] удаётся слезть с вышки'
         jump scene_15
-    else:
-        jump scene_14
 
 
