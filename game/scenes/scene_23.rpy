@@ -5,7 +5,7 @@ label scene_23:
 
     'Бобби пытается вылезти из-под завала'
 
-    $ chance = renpy.random.randint()
+    $ chance = renpy.random.randint(1, 2)
     if chance >= choosenCharacter.stats.strength.value:
         'Успех – Боби выбирается и становится единственным уцелевшим'
     else:
