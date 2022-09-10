@@ -40,14 +40,14 @@ label scene_17:
 
                 $ chance = renpy.random.randint(1,4)
                 if chance <= choosenCharacter.stats.strength.value:
+                    hide shmanduk
+                    'Ура, вам удалось одолеть смотрителя'
+                    'Вы покидаете луна-парк «Unluck`ич»'
+                else:
                     '[choosenCharacter.character.name] не удалось победить Шмандюка, ружье оказалось сильнее..'
                     $ choosenCharacter.die()
                     'Вы спасаетесь бегством..'
                     jump scene_12
-                else:
-                    hide shmanduk
-                    'Ура, вам удалось одолеть смотрителя'
-                    'Вы покидаете луна-парк «Unluck`ич»'
 
             'Убежать в сторону кафе ':
                 jump scene_12

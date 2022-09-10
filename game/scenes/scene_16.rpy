@@ -8,7 +8,7 @@ label scene_16:
 
     'Вся компания успокаивается, ведь спустившись вы сможете покинуть это страшное место…'
 
-    $ chance = renpy.randint(1, 3)
+    $ chance = renpy.random.randint(1, 3)
 
     if chance == 1 or chance == 2:
         jump scene_20
@@ -20,5 +20,5 @@ label scene_16:
             $ lakmus.die()
 
             jump scene_23
-        else
+        else:
             jump scene_19
